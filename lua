@@ -41,7 +41,7 @@ library.theme = {
     buttoncolor = Color3.fromRGB(49, 49, 49),
     buttoncolor2 = Color3.fromRGB(39, 39, 39),
     itemscolor = Color3.fromRGB(200, 200, 200),
-    itemscolor2 = Color3.fromRGB(0, 0, 0)
+    itemscolor2 = Color3.fromRGB(210, 210, 210)
 }
 
 if library.theme.cursor and Drawing then
@@ -848,13 +848,13 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.Label.Font = window.theme.font
                 toggle.Label.ZIndex = 5
                 toggle.Label.Text = toggle.text
-                toggle.Label.TextColor3 = window.theme.itemscolor
+                toggle.Label.TextColor3 = Color3.fromRGB(160, 160, 160)
                 toggle.Label.TextSize = 15
                 toggle.Label.TextStrokeTransparency = 1
                 toggle.Label.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
                     toggle.Label.Font = theme.font
-                    toggle.Label.TextColor3 = toggle.value and window.theme.itemscolor2 or theme.itemscolor
+                    toggle.Label.TextColor3 = Color3.fromRGB(210, 210, 210)
                 end)
 
                 toggle.CheckedFrame = Instance.new("Frame", toggle.Main)
