@@ -787,7 +787,7 @@ function library:CreateWindow(name, size, hidebutton)
 
                 toggle.Main = Instance.new("TextButton", sector.Items)
                 toggle.Main.Name = "toggle"
-                toggle.Main.BackgroundColor3 = Color3.fromRGB(136, 136, 136)
+                toggle.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 toggle.Main.BorderColor3 = window.theme.outlinecolor
                 toggle.Main.BorderSizePixel = 0
                 toggle.Main.Size = UDim2.fromOffset(8, 8)
@@ -841,7 +841,7 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.Label = Instance.new("TextButton", toggle.Main)
                 toggle.Label.Name = "Label"
                 toggle.Label.AutoButtonColor = false
-                toggle.Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                toggle.Label.BackgroundColor3 = Color3.fromRGB(136, 136, 136)
                 toggle.Label.BackgroundTransparency = 1
                 toggle.Label.Position = UDim2.fromOffset(toggle.Main.AbsoluteSize.X + 10, -2)
                 toggle.Label.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 71, toggle.BlackOutline.Size.Y.Offset)
