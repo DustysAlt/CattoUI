@@ -27,7 +27,7 @@ library.theme = {
     cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     backgroundcolor = Color3.fromRGB(20, 20, 20),
-    tabstextcolor = Color3.fromRGB(240, 240, 240),
+    tabstextcolor = Color3.fromRGB(136, 136, 136),
     bordercolor = Color3.fromRGB(60, 60, 60),
     accentcolor = Color3.fromRGB(28, 56, 139),
     accentcolor2 = Color3.fromRGB(16, 31, 78),
@@ -841,7 +841,7 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.Label = Instance.new("TextButton", toggle.Main)
                 toggle.Label.Name = "Label"
                 toggle.Label.AutoButtonColor = false
-                toggle.Label.BackgroundColor3 = Color3.fromRGB(136, 136, 136)
+                toggle.Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 toggle.Label.BackgroundTransparency = 1
                 toggle.Label.Position = UDim2.fromOffset(toggle.Main.AbsoluteSize.X + 10, -2)
                 toggle.Label.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 71, toggle.BlackOutline.Size.Y.Offset)
